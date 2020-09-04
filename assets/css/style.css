@@ -1,3 +1,8 @@
+/* 
+#Author: Sajan Kc
+#Date: 3rd September 2020
+*/
+
 *,
 ::after,
 ::before {
@@ -160,7 +165,7 @@ img {
 }
 
 .outer-container {
-  margin: 0 30px;
+  margin: 0 7%;
 }
 
 .heading__font48 {
@@ -269,18 +274,21 @@ img {
   text-align: center;
 }
 
-.header__button {
+.header__button,
+.footer__button {
   display: inline-block;
 }
 
-.header__button .header__link {
+.header__button .header__link,
+.footer__button .footer__link {
   color: #ffffff;
   display: inline-block;
   overflow: auto;
   text-transform: uppercase;
 }
 
-.header__button img {
+.header__button img,
+.footer__button img {
   width: 16px;
   height: 16px;
   margin-left: 5px;
@@ -296,15 +304,15 @@ img {
   justify-content: space-around;
 }
 
-.card {
+.info__card {
   max-width: 300px;
 }
 
-.card__content {
+.info__card__content {
   text-align: center;
 }
 
-.card__head {
+.info__card__head {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.33;
@@ -312,7 +320,7 @@ img {
   color: #27ad6c;
 }
 
-.card__desc {
+.info__card__desc {
   font-size: 14px;
   line-height: 1.57;
   font-weight: normal;
@@ -346,6 +354,11 @@ img {
 .news__blog__link {
   display: inline-block;
   color: #27ad6c;
+}
+
+.news__resource__link:hover .news__resource__title,
+.news__blog__link:hover .news__blog__title {
+  box-shadow: 1px 1px 5px #27ad6c;
 }
 
 .news__resource__item img {
@@ -385,6 +398,11 @@ img {
 }
 
 /* Ninja separator */
+.section__ninja {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
 .ninja {
   display: flex;
   justify-content: center;
@@ -402,4 +420,140 @@ img {
 .ninja__image {
   width: 50px;
   height: 48px;
+}
+
+/* Gallery section */
+
+.section__gallery {
+  padding-bottom: 0;
+}
+
+.section__gallery .gallery__head {
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.gallery__head span {
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.gallery__container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 0;
+}
+
+.gallery__item:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.gallery__item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Services section */
+
+.section__service {
+  padding-top: 145px;
+}
+
+.service__head {
+  text-align: center;
+}
+
+.service__head h2 {
+  color: #ffffff;
+  line-height: 1;
+  padding-bottom: 48px;
+}
+
+.service__menu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 45px;
+  column-gap: 43px;
+  padding-top: 28px;
+}
+
+.service__card {
+  display: flex;
+  flex-direction: row;
+}
+
+.service__card__content {
+  padding-left: 11px;
+}
+
+.service__card__img {
+  width: 50px;
+  height: 60px;
+}
+
+.service__card__head {
+  font-size: 18px;
+  padding-bottom: 15px;
+  line-height: 1.44;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.service__card__desc {
+  opacity: 0.5;
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.service__button {
+  text-align: center;
+}
+
+/* logo ninja */
+#logo__ninja {
+  padding-top: 23px;
+  padding-bottom: 58px;
+}
+
+#logo__ninja .ninja__image {
+  opacity: 0.3;
+}
+
+/* footer section */
+.footer {
+  background-color: #333333;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.footer__copyright span {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer__nav__menu {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.footer__nav__item {
+  margin-left: 20px;
+}
+
+.footer__nav__item .nav__link {
+  color: #ffffff;
+}
+
+.footer__nav__item:hover .nav__link{
+  color: #70c919;
 }
